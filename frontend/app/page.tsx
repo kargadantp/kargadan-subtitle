@@ -32,7 +32,7 @@ export default function Home() {
     try {
       const response = await axios.post("https://kargadan-subtitle.onrender.com", formData);
       setSrtUrl(response.data.srt_url);
-    } catch (err) {
+    } catch (ـerr) {
       setError("مشکلی در پردازش فایل رخ داد. لطفاً دوباره تلاش کنید.");
     } finally {
       setLoading(false);
